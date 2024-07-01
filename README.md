@@ -19,7 +19,7 @@ O projeto é composto por um controlador principal que está localizado no pacot
    - **Descrição:** Retorna uma mensagem simples "Hello World!!".
 
    ```java
-   javaCopiar código@GetMapping("/welloworld")
+   @GetMapping("/welloworld")
    public String WelloWorld() {
        return "Hello World!!";
    }
@@ -32,7 +32,7 @@ O projeto é composto por um controlador principal que está localizado no pacot
    - **Descrição:** Retorna uma lista das Business and Soft Skills (BSMs) da Generation Brasil.
 
    ```java
-   javaCopiar código@GetMapping("/bsn")
+   @GetMapping("/bsn")
    public String BsmGeneration() {
        return "Mentalidade de Crescimento (Growth Mindset)\n" +
                "Responsabilidade Pessoal (Personal Responsibility)\n" +
@@ -56,7 +56,7 @@ O projeto é composto por um controlador principal que está localizado no pacot
    - **Descrição:** Retorna uma mensagem com os objetivos da semana, focando em três habilidades específicas.
 
    ```java
-   javaCopiar código@GetMapping("/semanaObj")
+   @GetMapping("/semanaObj")
    public String semanaObj() {
        return "Meus objetivos da semana consiste em aprimorar meus conhecimentos nas BSN'S: " +
                "Comunicação (Communication)\n" +
@@ -76,14 +76,14 @@ O projeto é composto por um controlador principal que está localizado no pacot
 1. **Clone o repositório:**
 
    ```shell
-   bashCopiar códigogit clone <URL_DO_REPOSITORIO>
+   clone <URL_DO_REPOSITORIO>
    cd <NOME_DO_REPOSITORIO>
    ```
 
 2. **Compile e execute o projeto:**
 
    ```shell
-   bashCopiar códigomvn clean install
+   mvn clean install
    mvn spring-boot:run
    ```
 
