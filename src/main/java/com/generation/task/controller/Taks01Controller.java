@@ -13,7 +13,7 @@ public class Taks01Controller {
         return "Hello World!!";
     }
 
-    @GetMapping("/bsn")
+    @GetMapping("/bsm")
     public String BsmGeneration() {
         return "Mentalidade de Crescimento (Growth Mindset)\n" +
                 "Responsabilidade Pessoal (Personal Responsibility)\n" +
@@ -31,7 +31,7 @@ public class Taks01Controller {
 
     @GetMapping("/semanaObj")
     public String semanaObj() {
-        return "Meus objetivos da semana consiste em aprimorar meus conhecimentos nas BSN'S: " +
+        return "Meus objetivos da semana consiste em aprimorar meus conhecimentos nas BSM'S: " +
                 "Comunicação (Communication)\n" +
                 "Trabalho em Equipe (Teamwork)\n" +
                 "Pensamento Crítico (Critical Thinking)\n";
